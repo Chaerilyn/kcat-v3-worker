@@ -1,0 +1,40 @@
+# --- Secrets (CRITICAL) ---
+# Ignore the .env file containing your passwords/API keys
+.env
+.env.local
+*.pem
+
+# --- Build Artifacts ---
+# Binaries created by 'go build'
+# (Adjust this if you name your binary something specific)
+main
+server
+worker
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binaries
+*.test
+
+# --- Go Specific ---
+# Vendor folder (unless you specifically want to commit dependencies)
+vendor/
+
+# Go workspace file (for multi-module local development)
+go.work
+
+# --- IDE / Editor Settings ---
+# VS Code
+.vscode/
+# JetBrains (GoLand)
+.idea/
+*.iml
+# Mac OS clutter
+.DS_Store
+
+# --- Temporary Files ---
+# Temporary files created by the OS or tools
+tmp/
+temp/
